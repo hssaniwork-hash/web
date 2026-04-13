@@ -1,0 +1,400 @@
+*{
+  padding: 0; margin: 0; font-weight: bold;
+}
+
+:root{
+    --bk:#fff;
+    --color-header:#94661d;
+    --color:#fff;
+    --header:#113713;
+  
+}
+
+
+body{
+    box-sizing: border-box;
+    background: var(--bk);
+    overflow: hidden;
+   
+}
+
+header{
+background: var(--header);
+width: 100%;
+height:300px;
+position: fixed;
+font-size: 20px;
+display: flex;
+justify-content: center;
+z-index: 100;
+}
+.-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+    
+}
+.-header img{
+    width: 160px; height: 160px;
+    position: relative;
+    top: 20px;
+    left: 30%;
+}
+.-header label{
+    font-size: 50px;
+    margin-left: -30px;
+}
+.-header h1{
+    color: var(--color-header);
+    position: relative;
+    top: -15px;
+    left: 40%;
+    font-size: 60px;
+
+}
+
+.-header span{
+color:var(--color);
+position: relative;
+left: 40%;
+letter-spacing:10;
+font-weight: bold;
+font-size: 30px;
+
+}
+
+
+.-header .inputs{
+    width: 100%;
+   display: flex;
+   justify-content: space-around;
+   padding: 5px;
+   margin: 0px;
+}
+.inputs label{
+    font-size: 35px;
+}
+.inputs input{
+    padding: 2px;
+    height:40px;
+    width:200px;
+    background: transparent;
+    border: solid 1.5px #d1d1d1;
+    border-radius:7px;
+}
+
+.continers{
+    background: #ddd;
+    display: grid;
+    overflow: scroll;
+    grid-template-columns: 1fr;
+    position: relative;
+    top: 0px;
+    left: 0;
+    height: 100vh;
+   max-height: max-content;
+}
+.content-1{
+    position: relative;
+    left: 10%;
+    top: 30%;
+    font-size: 80px;
+    padding: 20px 25px;
+    display: grid;
+    overflow-y: scroll;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1900px;
+    height: 1600px;
+   
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 30px;
+    border: solid 12px #7d510b;
+
+}
+
+.content-1 .box{
+display: grid;
+border-radius: 12px;
+background: transparent;
+max-width: 1000px;
+max-height: 900px;
+grid-template-columns: 1fr;
+background: rgb(10, 52, 7);
+margin: 20px;
+padding: 20px 30px;
+color: #fff;
+align-items: center;
+font-size: 50px;
+
+}
+
+.box input{
+    padding: 20px;
+    font-size: 50px;
+    margin: 10px;
+    border: #d0d0d0 solid 2px;
+    border-radius: 9px;
+    outline: none;
+    background: transparent;
+    
+}
+.box .btn{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+   
+}
+.btn button{
+    width: 400px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    background: #0b5c05;
+    color: #fff;
+    font-size: 40px;
+}
+.content-2{
+      position: relative;
+    left: 10%;
+    top: 30%;
+    margin-top: 120px;
+    font-size: 80px;
+    padding: 20px 25px;
+    display: grid;
+    overflow-y: scroll;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1900px;
+    height: 1600px;
+   
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 30px;
+    border: solid 12px #7d510b;
+    
+}
+
+.content-2 .box2{
+display: grid;
+border-radius: 12px;
+background: transparent;
+max-width: 1000px;
+max-height: 900px;
+grid-template-columns: 1fr;
+background: rgb(10, 52, 7);
+margin: 20px;
+padding: 20px 30px;
+color: #fff;
+align-items: center;
+
+font-size: 50px;
+
+}
+
+.box2 input{
+    padding: 20px;
+    font-size: 50px;
+    margin: 10px;
+    border: #d0d0d0 solid 2px;
+    border-radius: 9px;
+    outline: none;
+    background: transparent;
+    
+}
+
+
+.box2 .btn{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+   
+}
+.box2 .btn button{
+    width: 400px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    background: #0b5c05;
+    color: #6b1a1a;
+    font-size: 40px;
+}
+
+footer{
+    background: #0b5c05;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+@media (max-width:2100px){
+.continers{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;   
+width: 100%;
+height: 100%;
+overflow: hidden;
+overflow-y: scroll;
+}
+
+.content-1{
+    width: 1750px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.content-2{
+    width: 1650px;
+    overflow: hidden;
+    overflow-y: scroll;
+}   
+
+}
+
+@media (max-width:1200px){
+.continers{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;   
+width: 100%;
+height: 100%;
+overflow: hidden;
+overflow-y: scroll;
+display: grid;
+grid-template-columns: 1fr;
+}
+.content-1{
+    width: 900px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    position: relative;
+    top: 50%;
+    left: -20px;
+}
+.content-2{
+   width: 900px;
+   padding: 0px;
+   height: 500px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    position: relative;
+    top: 115%;
+    left: -20px;
+} 
+.content-2 .box2{
+    padding: 2px;
+ 
+}
+.box2 input{
+    padding: 4px;
+}   
+
+}
+
+
+
+@media (max-width:800px){
+.continers{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;   
+width: 100%;
+height: 100%;
+overflow: hidden;
+overflow-y: scroll;
+}
+.content-1{
+    width: 800px;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.content-2{
+    width: 800px;
+    overflow: hidden;
+    overflow-y: scroll;
+} 
+   
+
+}
+@media (max-width:500px){
+.continers{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;   
+width: 100%;
+height: 100%;
+overflow: hidden;
+overflow-y: scroll;
+}
+.content-1{
+    width: 450px;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.content-2{
+    width: 450px;
+    overflow: hidden;
+    overflow-y: scroll;
+} 
+   
+
+}
+
+@media (max-width:300px){
+.continers{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;   
+width: 100%;
+height: 100%;
+overflow: hidden;
+overflow-y: scroll;
+}
+
+   .content-1{
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.content-2{
+    width: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+} 
+
+}
+.msg{
+    width: 500px;
+    height: 60px;
+    background: #022f0c;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    content: "تمت العملية بنجاح";
+    position: absolute;
+    right: 70px;
+    text-align: center;
+    justify-content: center;
+    top: -10%;
+    transition: top 3s;
+}
+
+
+.msg.show{
+    top: 10%;
+}
