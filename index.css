@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
 *{
   padding: 0; margin: 0; font-weight: bold;
+    font-family: "Amiri", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px
 }
 
 :root{
     --bk:#fff;
     --color-header:#94661d;
     --color:#fff;
-    --header:#113713;
-    --con1:#043906;
+    --header:#08392E;
+    --con1:#08392E;
   
 }
 body{
@@ -83,7 +91,7 @@ header{
     .content-1 .box{
         display: grid;
         margin:1px;
-        background: #043906;
+        background: #08392E;
         padding: 5px;
         border: solid 5px var(--con1);
         border-radius: 7px;
@@ -146,7 +154,7 @@ header{
      }
 
      .content-2 .btn button{
-        background:#023c8e ;
+        background:#08392E ;
        border: none;
        border-radius: 7px;
         width: 120px;
@@ -159,7 +167,7 @@ header{
 
 
 
- @media (max-width:1000px){
+ @media (max-width:980px){
 body{
     box-sizing: border-box;
     width: 900px;
@@ -225,7 +233,7 @@ header{
     .content-1 .box{
         display: grid;
         margin:1px;
-        background: #043906;
+        background: #08392E;
         padding: 1px;
         border: solid 5px var(--con1);
         border-radius: 7px;
@@ -240,16 +248,16 @@ header{
     }
     .content-1 .box button{
         width: 60px;
-        border: none;
+        border: solid 1px #fff;
         padding: 3px;
-        background: #455;
+        background: #08392E;
         color: #fff;
         border-radius: 6px;
     }
 
     .content-1 .box button:hover{
         transition: 1S;
-        background: #05486c;
+        background: #0a5e4c;
     }
 
      .content-2{
@@ -289,7 +297,7 @@ header{
      }
 
      .content-2 .btn button{
-        background:#023c8e ;
+        background:#26816d ;
        border: none;
        border-radius: 7px;
         width: 120px;
@@ -302,7 +310,7 @@ header{
     body{
     box-sizing: border-box;
     width: 360px;
-    height: 670px;
+    height: 690px;
     overflow-y: scroll;
     object-fit: contain;
     position: relative;
@@ -322,7 +330,7 @@ header{
         align-items: center;
         z-index: 100;
     }
-    header img{width: 40px ; height: 40px;}
+    header img{width: 50px ; height: 40px;}
     header h1{
         font-size: 14px;
     }
@@ -330,14 +338,23 @@ header{
     header .inputs{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
     }
-
+    header .inputs input{
+        width: 100px;
+        border: solid 1.2px #e1e1e1;
+        background: transparent;
+        border-radius: 7px;
+        margin-left: -5px;
+    }
 
     .continers{
         overflow: hidden;
         display: flex;
         width: 390px;
-        height: 2400px;
+        height: 3400px;
         justify-content: center;
         flex-wrap: wrap;
         background: var(--bk);
@@ -355,16 +372,16 @@ header{
         height: fit-content;
         position: relative;
         left: 0px;
-        top: 75px;
+        top: 110px;
         grid-template-columns: 1fr;
         overflow: hidden;
-        overflow-y: scroll;
+        
 
     }
     .content-1 .box{
         display: grid;
         margin:1px;
-        background: #043906;
+        background: #08392E;
         padding: 1px;
         border: solid 5px var(--con1);
         border-radius: 7px;
@@ -379,16 +396,17 @@ header{
     }
     .content-1 .box button{
         width: 60px;
-        border: none;
+        border: solid 1.3px #fff;
         padding: 3px;
-        background: #455;
+
+        background: #08392E;
         color: #fff;
         border-radius: 6px;
     }
 
     .content-1 .box button:hover{
         transition: 1S;
-        background: #05486c;
+        background: #0f9477;
     }
 
      .content-2{
@@ -401,10 +419,10 @@ header{
         height: max-content;
         position: relative;
         left: 0px;
-        top: -20px;
-        grid-template-columns: 1fr 1fr;
+        top: 120px;
+        grid-template-columns: 1fr;
         overflow: hidden;
-        overflow-y: scroll;
+        
      }
 
      .content-2 .box2{
@@ -443,7 +461,7 @@ header{
     position: absolute;
     top: -10%;
     left: 30%;
-    background: rgb(7, 68, 26);
+    background: #08392E;
     display: flex;
     justify-content: center;
     z-index: 150;
