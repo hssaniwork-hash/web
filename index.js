@@ -6,3 +6,9 @@ function showmsg(){
             msg.classList.remove("show");
         }, 5000);
 }
+
+
+
+setInterval(() => {
+    document.querySelector("h1").innerHTML = window.innerWidth;
+}, 1000);
