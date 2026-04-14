@@ -9,6 +9,3 @@ function showmsg(){
 
 
 
-setInterval(() => {
-    document.querySelector("h1").innerHTML = window.innerWidth;
-}, 1000);
