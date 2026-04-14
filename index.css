@@ -296,11 +296,16 @@ header{
         padding: 3px;
      }   
 }
- @media (max-width:700px){
-body{
+ @media (max-width:506px){
+    html{
+        width: 100%;
+         height: 100%;
+    }
+
+    body{
     box-sizing: border-box;
-    width: 704px;
-    height: 1604px;
+    width: 360px;
+    height: 670px;
     overflow-y: scroll;
     object-fit: contain;
     position: relative;
@@ -334,8 +339,8 @@ header{
     .continers{
         overflow: hidden;
         display: flex;
-        width: 100%;
-        height: 100%;
+        width: 370px;
+        height: 2200px;
         justify-content: center;
         flex-wrap: wrap;
         background: var(--bk);
@@ -349,12 +354,12 @@ header{
         border-radius: 7px;
         display: grid;
         padding: 5px;
-        width: 50%;
-        height: max-content;
+        width: 95%;
+        height: fit-content;
         position: relative;
-        left: -180px;
-        top: 90px;
-        grid-template-columns: 1fr 1fr;
+        left: 0px;
+        top: 75px;
+        grid-template-columns: 1fr;
         overflow: hidden;
         overflow-y: scroll;
 
@@ -395,11 +400,11 @@ header{
         border-radius: 7px;
         display: grid;
         padding: 5px;
-        width: 50%;
+        width: 94%;
         height: max-content;
         position: relative;
-        left: -190px;
-        top: 60px;
+        left: 0px;
+        top: -20px;
         grid-template-columns: 1fr 1fr;
         overflow: hidden;
         overflow-y: scroll;
@@ -407,7 +412,7 @@ header{
 
      .content-2 .box2{
         display: flex;
-        width: 70%;
+        width: 80%;
         flex-direction: column;
         margin: 0px;
         padding: 1px;
@@ -420,6 +425,7 @@ header{
         outline: none;
      }
      .content-2 .btn{
+        margin-top: 9px;
         width: 250px;
         justify-content: space-around;
         display: flex;
