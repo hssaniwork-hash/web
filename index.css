@@ -342,7 +342,12 @@ header{
         align-items: center;
         text-align: center;
     }
+    header .inputs label{
+        color: #fff;
+        margin: 5px;
+    }
     header .inputs input{
+    
         width: 100px;
         border: solid 1.2px #e1e1e1;
         background: transparent;
