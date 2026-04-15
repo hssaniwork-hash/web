@@ -18,14 +18,20 @@
     --con1:#08392E;
   
 }
-body{
+
+
+
+@media (min-width:950px) {
+  body{
     box-sizing: border-box;
     
-    height: 100vw;
+    height: 2700px;
     overflow-y: scroll;
     object-fit: contain;
     position: relative;
+}  
 }
+
 
 /*--------------------------------------------------------------*/
 @keyframes sde {
@@ -36,6 +42,8 @@ body{
         background: linear-gradient(#ffffff81,#060d3137,#103303);
     }
 }
+
+
 header{
         width: 100%;
         background: var(--header);
@@ -64,7 +72,7 @@ header{
     .continers{
         overflow: hidden;
         display: flex;
-        height: 100vw;
+        height: 100%;
         justify-content: center;
         flex-wrap: wrap;
         background: var(--bk);
@@ -83,7 +91,7 @@ header{
         position: relative;
         left: -60px;
         top: 90px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         overflow: hidden;
         overflow-y: scroll;
           
@@ -128,7 +136,7 @@ header{
         height: fit-content;
         position: relative;
         left: -60px;
-        top: 120px;
+        top: -90px;
         grid-template-columns: 1fr 1fr;
         overflow: hidden;
         overflow-y: scroll;
@@ -141,11 +149,10 @@ header{
         padding: 2px;
      }
      .content-2 .box2 input{
-        background: transparent;
-        border: none;
-        border-bottom: solid 2px var(--con1);
+       border: solid 1px #023c8e;
+       border-radius: 2px;
         padding: 3px;
-        outline: none;
+        
      }
      .content-2 .btn{
         width: 250px;
@@ -167,11 +174,11 @@ header{
 
 
 
- @media (max-width:980px){
+ @media (min-width:500px) and (max-width:950px){
 body{
     box-sizing: border-box;
-    width: 900px;
-    height: 1400px;
+    width: 100%;
+    height: 3100px;
     overflow-y: scroll;
     object-fit: contain;
     position: relative;
@@ -198,7 +205,14 @@ header{
 
     header .inputs{
         display: flex;
+        width: 400px;
+        justify-content: space-around;
         flex-wrap: wrap;
+        position: relative;
+        left: 10px;
+    }
+    header .inputs input{
+        width: 80px;
     }
 
 
@@ -208,7 +222,7 @@ header{
         width: 100%;
         height: 100%;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         background: var(--bk);
         
     }
@@ -220,19 +234,23 @@ header{
         border-radius: 7px;
         display: grid;
         padding: 5px;
-        width: 50%;
-        height: max-content;
+        width: auto;
+        height: 1000px;
+        flex-wrap: nowrap;
         position: relative;
-        left: -180px;
-        top: 90px;
-        grid-template-columns: 1fr 1fr;
-        overflow: hidden;
+        left: 0px;
+        top: 120px;
+        grid-template-columns: 1fr;
+        overflow-x: scroll;
         overflow-y: scroll;
-
+        overflow-wrap: break-word;
+        
+      
     }
     .content-1 .box{
         display: grid;
         margin:1px;
+        width: 70%;
         background: #08392E;
         padding: 1px;
         border: solid 5px var(--con1);
@@ -266,11 +284,11 @@ header{
         border-radius: 7px;
         display: grid;
         padding: 5px;
-        width: 50%;
+        width: 70%;
         height: max-content;
         position: relative;
-        left: -190px;
-        top: 60px;
+        left: -50px;
+        top: 50%;
         grid-template-columns: 1fr 1fr;
         overflow: hidden;
         overflow-y: scroll;
@@ -278,7 +296,7 @@ header{
 
      .content-2 .box2{
         display: flex;
-        width: 70%;
+        width: 50%;
         flex-direction: column;
         margin: 0px;
         padding: 1px;
@@ -286,6 +304,7 @@ header{
      .content-2 .box2 input{
         background: transparent;
         border: none;
+        width: 100%;
         border-bottom: solid 2px var(--con1);
         padding: 2px;
         outline: none;
@@ -471,6 +490,7 @@ header{
     justify-content: center;
     z-index: 150;
     color: #fff;
+    border: solid 1.3px #fff;
     text-align: center;
     align-items: center;
     border-radius: 8px;  
@@ -478,5 +498,6 @@ header{
 }
 
 .msg.show{
-    top: 10%;
+    border: solid 2px #023c8e;
+    top: 70%;
 }
