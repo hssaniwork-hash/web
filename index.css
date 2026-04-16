@@ -254,7 +254,7 @@ header{
         border-radius: 7px;
         display: grid;
         padding: 5px;
-        width: 100%;
+        width: auto;
         height: 1000px;
         flex-wrap: nowrap;
         position: relative;
