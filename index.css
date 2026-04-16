@@ -435,10 +435,10 @@ header{
         border-radius: 7px;
         display: grid;
         padding: 5px;
-        width: 80%;
+        width: 95%;
         height: fit-content;
         position: relative;
-        left: 0px;
+        left: -10px;
         top: 110px;
         grid-template-columns: 1fr;
         overflow: hidden;
