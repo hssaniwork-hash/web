@@ -159,47 +159,82 @@
             </div>
         </div>
 </div>
+
+
+
+
+
+
+
+
+
+
     <div class="content-2">
         <div class="box2">
             <label>اسم الموظف</label>
-            <input>
+            <input class="a1">
         </div>
         <div class="box2">
             <label>المسمى الوظيفي</label>
-            <input>
+            <input class="a2">
         </div>
         <div class="box2">
             <label>اسم المشرف</label>
-            <input>
+            <input class="a3">
         </div>
         <div class="box2">
             <label>التقييم السلوكي</label>
-            <input>
+            <input class="a4">
         </div>
         <div class="box2">
             <label>التقييم التشغيلي</label>
-            <input>
+            <input class="a5">
         </div>
         <div class="box2">
             <label>عدد الاخطاء</label>
-            <input>
+            <input class="a6">
         </div>
         <div class="box2">
             <label>حالة الدوام</label>
-            <input>
+            <input class="a7">
         </div>
         <div class="box2">
             <label>ملاحظات</label>
-            <input>
+            <input class="a8">
         </div>
         <div class="btn">
-            <button id="" onclick="showmsg()">حفظ</button>
+            <button name="save" id="" onclick="showmsg() ; levelinsert();">حفظ</button>
              <button id="" onclick="showmsg()">حذف</button>
         </div>
     </div>
     
 </div>
-
+<table id="content-2-tabel">
+    <tr>
+        <th>ID</th>
+        <th>اسم الموظف</th>
+        <th>اسم المشرف</th>
+        <th>تقييم سلوكي</th>
+        <th>المسمى الوظيفي</th>
+        <th>تقييم تشغيلي</th>
+        <th>عدد الاخطاء</th>
+        <th>حالة الدوام</th>
+        <th>ملاحظات</th>
+    </tr>
+<tr>
+ <tr>
+            <td>1</td>
+            <td>خالد</td> 
+            <td>مدخل بيانات</td>
+            <td>احمد</td> 
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>جاهز</td> 
+            <td>لايوجد</td>
+</tr>
+   
+</table>
 <script src="index.js"></script>
 </body>
 </html>
